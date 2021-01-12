@@ -24,7 +24,7 @@ const baseUrl =
   'https://update-homepage-in-your-package.json'
 
 const repoRoot = path.dirname(pkgPath)
-const redirectPath = path.join(repoRoot, '_redirects')
+const redirectPath = path.join(repoRoot, 'dist/_redirects')
 
 pull(repoRoot)
 

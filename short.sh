@@ -2,11 +2,12 @@
 
 url="$1"
 code="$2"
+output="dist/_redirects"
 echo $url
 echo $code
 test -z "$code" && code="$(openssl rand -hex 5 | head -c 5)"
-test -n "$url" && echo "/$code $url" >> _redirects
-out="$(column -s ' ' -t -c 2 < _redirects | sort | uniq)"
-echo "$out" | grep -v "^/\*" > _redirects
-echo >>_redirects
-echo "$out" | grep "^/\*" >> _redirects
+test -n "$url" && echo "/$code $url" >> $output
+out="$(column -s ' ' -t -c 2 < $output | sort | uniq)"
+echo "$out" | grep -v "^/\*" > $output
+echo >> $output
+echo "$out" | grep "^/\*" >> $output
