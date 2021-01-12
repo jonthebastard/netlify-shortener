@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/kentcdodds/netlify-shortener/issues"
   },
-  "homepage": "https://github.com/kentcdodds/netlify-shortener#readme",
+  "homepage": "https://agitated-varahamihira-284fca.netlify.app/",
   "files": [
     "dist"
   ],
@@ -30,11 +30,13 @@
     "setup": "npm install && npm run validate -s",
     "test": "kcd-scripts test",
     "test:update": "npm test -- --updateSnapshot --coverage",
-    "validate": "kcd-scripts validate"
+    "validate": "kcd-scripts validate",
+    "shorten": "netlify-shortener"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
     "clipboardy": "^2.3.0",
+    "netlify-shortener": "^2.4.0",
     "read-pkg-up": "^7.0.1"
   },
   "devDependencies": {
