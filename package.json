@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/kentcdodds/netlify-shortener/issues"
   },
-  "homepage": "https://agitated-varahamihira-284fca.netlify.app/",
+  "homepage": "https://agitated-varahamihira-284fca.netlify.app",
   "files": [
     "dist"
   ],
